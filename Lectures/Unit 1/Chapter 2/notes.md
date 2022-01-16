@@ -1,0 +1,10 @@
+- Install SQL server
+- Install windows PowerShell 5.1 or later
+- Ensure you have admin privileges 
+- Ensure you can run scripts
+    - Run terminal as admin
+    - Run `Get-ExecutionPolicy` and be sure its != `AllSigned`
+    - If it's set to that, run `Set-ExecutionPolicy RemoteSigned`
+- Install VSCode
+- Install the `powershell` extension
+- Make sure you're creating scripts that end in `ps1`, `.psm1` or `.ps1xml`

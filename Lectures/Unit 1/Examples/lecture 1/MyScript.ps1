@@ -1,0 +1,1 @@
+Get-Location | ConvertTo-Html | Out-File .\index.html
