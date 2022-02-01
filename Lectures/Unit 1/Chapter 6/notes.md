@@ -93,7 +93,7 @@ if($true) {
 }
 ```
 
-### ELIF
+### ELSEIF
 
 - If allows us to check if something is true. If it is true, we run the code in
     the brackets.
@@ -101,7 +101,7 @@ if($true) {
 ```ps
 if($false) {
     echo "This never runs!"
-} elif ($true) {
+} elseif ($true) {
     echo "This runs tho!"
 }
 ```
@@ -116,7 +116,7 @@ if($false) {
 ```ps
 if($false) {
     echo "This never runs!"
-} elif ($false) {
+} elseif ($false) {
     echo "This never runs either!"
 } else {
     echo "This runs tho!"
