@@ -30,8 +30,10 @@ Get-Service -name *c*, *e*
 ```ps
 -eq # Check if equal
 -ne # Check if not equal
--gt # Check if left is greater or equal to right
--lt # Check if left is less or equal to right
+-gt # Check if left is greater than right
+-lt # Check if left is less than right
+-ge # Check if left is greater than or equal to right
+-le # Check if left is less than or equal to right
 -not # Check if value is not true
 ```
 -  We can also prepend `c` to any of these for comparing strings to assert that the cases match as well
