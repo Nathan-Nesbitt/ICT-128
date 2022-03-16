@@ -1,9 +1,6 @@
-# ICT 128
+# ICT 128 - Basics of Powershell
 
-This is a class on Powershell.
-
-## Lectures
-
-The lectures directory contains the majority of my personal notes for this class.
-They are not formatted in a special way and may not be a complete summary of what
-I discuss in the class, but they are a good starting point.
+This is the outline of a course on powershell. These are notes 
+and examples I often use in lectures. They are not complete in
+terms of a-z explenations but provide a good structure for topics 
+that are covered. 
