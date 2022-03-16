@@ -1,4 +1,4 @@
-# ICT 128 - Basics of Powershell
+# ICT 128 - Powershell
 
 This is the outline of a course on powershell. These are notes 
 and examples I often use in lectures. They are not complete in
