@@ -44,7 +44,7 @@ param (
 
 ## Parameter Aliases
 
-- We like to keep the names consistant accross all cmdlets, for example
+- We like to keep the names consistent across all cmdlets, for example
     `computerName` is normally how cmdlets take in the name of the 
     computer
 - But lets say you don't like this parameter name, and you want to change

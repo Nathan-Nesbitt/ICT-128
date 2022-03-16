@@ -86,7 +86,7 @@ $values | ForEach-Object { $_.ToLower()}
 
 ### Single Quotes
 
-Single quotes are litterals, which means they won't inject variables.
+Single quotes are literals, which means they won't inject variables.
 
 ```ps
 $variable = "Hello"
@@ -126,7 +126,7 @@ $variable = 3, 2, 1
 
 ### Escape Characters
 
-We can escape special chacters by using the escape character \`
+We can escape special characters by using the escape character \`
 
 ```ps
 $variable = "Hello"
@@ -182,7 +182,7 @@ Which fixes the type to be `int` instead of `string`
 
 ## Best Practices
 
-- Don't use spaces (it's possible, you can wrap the variable in curley braces
+- Don't use spaces (it's possible, you can wrap the variable in curly braces
     like `${My Variable}` but it's gross)
 - Make sure your variables are named logically, don't use `$a` or `$foo` for
     anything serious as it becomes impossible to follow the code.

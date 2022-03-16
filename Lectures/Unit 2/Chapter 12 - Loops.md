@@ -86,7 +86,7 @@ forEach($process in $processes) {
     iterations we are going to be performing but we do know
     a condition that will stop the loop.
 
-- You'll often see this when you want to recieve infinite input
+- You'll often see this when you want to receive infinite input
     from a user
 
 - An example of a while loop which counts from 0-9

@@ -1,6 +1,6 @@
 # Objects
 
-- Objects are useful in programming and scripting as programming mimicks
+- Objects are useful in programming and scripting as programming mimics
     what we see in real life
 - Being able to bundle related data together will make our lives easier
 
@@ -31,7 +31,7 @@ $process.Id
     - stop_shower
     - set_temperature
 
-- We can access these propeties through variables. For example, if I wanted to
+- We can access these properties through variables. For example, if I wanted to
     get the first process from the list of processes I could use the `Item` method.
 
 ```ps

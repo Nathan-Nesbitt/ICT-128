@@ -8,14 +8,14 @@
 
 - We can create Jobs to solve this problem.
 
-## Synchronous vs Asnychronous
+## Synchronous vs Asynchronous
 
 - `synchronous` is when we run line by line, top to bottom, until
     the script is done.
 
 - `asychronous` means that we can have multiple processes running at the same time. 
 
-- Jobs are run asychronously which is beneficial because
+- Jobs are run asynchronously which is beneficial because
     - Frees up the UI/terminal for more commands
     - ALlows you to run multiple computing problems at the same 
         time.

@@ -36,7 +36,7 @@ Write-Host "Hello World" -ForegroundColor yellow
 
 - We can also output text in different ways so we can control how they are displayed.
 
-- For example, if we want to supress warnings, by using the righ cmdlets for
+- For example, if we want to suppress warnings, by using the right cmdlets for
     output it is an easy task. 
 
 - There are multiple different ways of displaying this information:

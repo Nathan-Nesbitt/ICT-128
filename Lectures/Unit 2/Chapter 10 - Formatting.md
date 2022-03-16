@@ -115,7 +115,7 @@ dotnettypes.format.ps1 # Opens the default formatting file for powershell
     4. `Out-Host` passes the object to the formatting system
     5. The formatting system looks at the object and gets the defined rules for 
         the object which are passed back to the `Out-Host`.
-    6. `Out-Host` prints out the object based on the intructions. 
+    6. `Out-Host` prints out the object based on the instructions. 
 
 - If there is no rule for the object, the system will look for default value
     for example the output from `Get-WmiObject Win32_OperatingSystem` which

@@ -49,7 +49,7 @@ Get-Service | Where-Object -filter { $_.Status -eq 'Running' }
 ```
 
 - Like before, we are using the `$_` to indicate each value in the output. We are then checking to see if the `Status` property for each 
-    service is eqivalent to `"Running"`
+    service is equivalent to `"Running"`
 
 ## How to approach filtering
 

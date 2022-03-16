@@ -14,7 +14,7 @@
 
 ```ps
 $name = Read-Host "What is your name"
-echo "hellp $name"
+echo "help $name"
 ```
 
 - Most of the labs in this course have been done using modules `.psm1`
