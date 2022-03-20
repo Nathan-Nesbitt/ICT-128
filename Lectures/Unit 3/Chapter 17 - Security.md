@@ -37,10 +37,52 @@ Set-ExecutionPolicy <POLICY>
 
 ## Digital Code Signing
 
-- You can 
+- Code signing is the process of generating a hash of the script using a signature.
+- This provides two things:
+  1. Identifies who created the script (or rather who signed it)
+  2. Ensure the integrity of the script (makes sure it hasn't been changed)
+- You can sign your own scripts using a class 3 certificate, which can be obtained from a certificate 
+  authority (CA) or a internal public-key infrastructure (PKI)
+- You should only trust a signature if the CA that authorized it is reputable.
+- You can view all the CAs on the system via `Manage Computer Certificates`
+  - The root authorities can be viewed under the `Trusted Root Certification Authorities` tab
+- Any certificate provided by these authorities is trusted automatically.
+
+### Signing a script
+
+1. Create a new self-signed certificate using `New-SelfSignedCertificate` or get one from your CA
+
+```ps
+New-SelfSignedCertificate `
+  -Subject "Cert for Code Signing” `
+  -Type CodeSigningCert `
+  -DnsName test1 `
+  -CertStoreLocation cert:\LocalMachine\My
+```
+
+2. Sign the script using the new certificate
+
+```ps
+$cert = (Get-ChildItem cert:\CurrentUser\my -CodeSigningCert)[0]
+Set-AuthenticodeSignature <SCRIPT> $cert
+```
+
+- This will throw an error as the file is self-signed. But you should be able to check the contents
+  of the file for the signature. 
 
 ## Auto-Run
 
-## Script Execution
+- Auto run is disabled by default on the system for powershell files
+- This is to ensure that people are not tricked into running scripts.
+- This also applies to scripts run from the CLI, you cannot change the name of a script to run
+    without specifying the full path
+- This means that you cannot create a new script called "ls" that runs arbitrary code
+- This also means you need to run the script using a path `./YOURSCRIPT.PS1`
 
 ## Other Security Holes
+
+- Be aware that powershell doesn't stop users from typing commands in
+- This means that social engineering attacks are always a threat
+- Users can be convinced via mail or phone (or any other platform) to
+    breach the security of your system.
+- Train people to detect and avoid falling for these tricks.
