@@ -1,1 +1,0 @@
-# Windows Management Instrumentation (WMI) and CIM
