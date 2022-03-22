@@ -63,7 +63,7 @@ New-SelfSignedCertificate `
 2. Sign the script using the new certificate
 
 ```ps
-$cert = (Get-ChildItem cert:\CurrentUser\my -CodeSigningCert)[0]
+$cert = (Get-ChildItem cert:\LocalMachine\my -CodeSigningCert)[0]
 Set-AuthenticodeSignature <SCRIPT> $cert
 ```
 
