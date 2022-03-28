@@ -18,8 +18,6 @@ Get-WmiObject -Namespace Root -Class __Namespace | Select-Object -Property Name
 Get-CimClass / Get-WmiObject
 ```
 
-### The Goods and The Bads
-
 ### Using WMI
 
 - We can find all of the WMI commands using the following command
